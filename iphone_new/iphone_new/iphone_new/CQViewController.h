@@ -10,4 +10,19 @@
 
 @interface CQViewController : UIViewController
 
+@property(nonatomic,weak)IBOutlet  UISegmentedControl* colorChooser;
+@property(nonatomic,weak)IBOutlet  UITextView* sampleText;
+
+@property(nonatomic,weak)IBOutlet UIDatePicker* datePicker;
+@property(nonatomic,weak)IBOutlet UIButton* dayBtn;
+
+@property(nonatomic,weak)IBOutlet UIPickerView* cstmPkrVw;
+
+//ValueChanged Event - UISegementedControl
+-(IBAction)colorChanged:(id)sender;
+
+//touchUpinside - UIButton
+-(IBAction)dayBtnClciked:(id)sender;
+
+//toucUpInside
 @end
